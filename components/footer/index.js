@@ -24,7 +24,7 @@ const Footer = () => {
                     </Typography>
                     <IconButton
                         component = { Link }
-                        href = 'https://github.com/DmitryHniezdilov/blog_project_react'
+                        href = 'https://github.com/DmitryHniezdilov/weather_app_next.js'
                         rel = 'noreferrer'
                         size = 'small'
                         style = {{color: '#d1d5da'}}
