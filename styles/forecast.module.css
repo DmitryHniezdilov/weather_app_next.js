@@ -1,0 +1,7 @@
+.forecast5 {
+    width: 100vw;
+    max-width: 1050px;
+    padding: 0 5vw;
+    background-color: #fff;
+    overflow-x: auto;
+}

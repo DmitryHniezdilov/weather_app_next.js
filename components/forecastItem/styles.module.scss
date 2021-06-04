@@ -1,0 +1,17 @@
+.forecastItem {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+
+    &__text {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    &__text sup {
+    vertical-align: super;
+    font-size: 0.6em;
+    }
+
+}

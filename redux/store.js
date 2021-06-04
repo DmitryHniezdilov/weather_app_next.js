@@ -1,16 +1,22 @@
 import { useMemo } from 'react'
-import { createStore, applyMiddleware } from 'redux'
+import { createStore, applyMiddleware, combineReducers } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunkMiddleware from 'redux-thunk'
-import reducers from './reducers'
+import weatherReducer from './reducers/weather';
+import generalReducer from './reducers/general';
+
+const rootReducer = combineReducers({
+  weather: weatherReducer,
+  general: generalReducer,
+});
 
 let store
 
 function initStore(initialState) {
   return createStore(
-    reducers,
-    initialState,
-    composeWithDevTools(applyMiddleware(thunkMiddleware))
+      rootReducer,
+      initialState,
+      composeWithDevTools(applyMiddleware(thunkMiddleware))
   )
 }
 

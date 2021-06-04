@@ -1,0 +1,21 @@
+.searchInput {
+    &__paper {
+        padding: 2px 4px 2px 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__input {
+        flex: 1;
+        margin-left: 10px;
+        color: white;
+
+        &--error {
+            color: #f44336 !important;
+        }
+    }
+
+    &__iconbtn {
+        padding: 10px;
+    }
+}
