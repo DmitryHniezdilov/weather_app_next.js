@@ -24,7 +24,7 @@ const Footer = () => {
                     </Typography>
                     <IconButton
                         component = { Link }
-                        href = 'https://github.com/DmitryHniezdilov/weather_app_next.js'
+                        href = 'https://weather-next-hniezdilov.netlify.app/'
                         rel = 'noreferrer'
                         size = 'small'
                         style = {{color: '#d1d5da'}}
